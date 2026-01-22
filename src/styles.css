@@ -1,3 +1,67 @@
+/* 
+The CSS Reset by Josh Comeau 
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
 body {
-  background-color: rebeccapurple;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ------------------------------------ */
+
+.picture-container {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  text-shadow: 
+    1px 1px 0 black, 
+    -1px 1px 0 black, 
+    1px -1px 0 black, 
+    -1px -1px 0 black;
+  font-size: 13vw;
 }
