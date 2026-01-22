@@ -146,6 +146,7 @@ main h1{
 .main-content{
   display: flex;
   flex-direction: column;
+  gap: 5vw;
 }
 
 section{
@@ -154,17 +155,22 @@ section{
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+section img {
+  display: flex;
+}
+
 section h2 {
   text-align: center;
   font-size: var(--h2-responsive);
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 3vw;
 }
 
 section p {
   font-size: 4.5vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 .project-title {
@@ -175,7 +181,7 @@ section p {
 .project-icons {
   display: flex;
   gap: 1vw;
-  padding: 1vw;
+  padding: 3vw;
 }
 
 #maximize-image-button img {
