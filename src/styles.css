@@ -74,22 +74,29 @@ h6 {
 /* GLOBAL VARIABLES DEFINITION */
 :root {
   --h1-responsive: 10vw;
+  --h2-responsive: 7vw;
+  --main-margin: 5vw;
 }
 
+/* header */
 /* ----------------------------- */
 header {
-background: linear-gradient(135deg, blue 50%, white 50%);
+background: linear-gradient(135deg,#ab9e8e 50%, white 50%);
 }
 
 .picture-container {
   position: relative;
-  text-align: center;
-  margin: 7vw;
+  text-align: left;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-bottom: 7vw;
+  padding-top: 7vw;
 }
 
 .bottom-left {
   position: absolute;
-  bottom: 8px;
+  bottom: 3vw;
+  padding-left: 7vw;
   color: white;
   text-shadow:
     1px 1px 0 black,
@@ -106,7 +113,7 @@ background: linear-gradient(135deg, blue 50%, white 50%);
 }
 
 .about-me p {
-  margin: 5vw;
+  margin: var(--main-margin);
   font-size: 5vw;
 }
 
@@ -114,4 +121,63 @@ background: linear-gradient(135deg, blue 50%, white 50%);
   display: flex;
   gap: 1vw;
   justify-content: space-evenly;
+}
+
+#github-button img {
+  min-width: 10vw;
+}
+
+#youtube-button img {
+  min-width: 10vw;
+}
+
+/* main content of the homepage */
+/* ----------------------------- */
+
+main {
+ margin-top: 17vw;
+}
+
+main h1{
+  text-align: center;
+  font-size: var(--h1-responsive);
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
+
+section{
+ margin: var(--main-margin);
+ padding-bottom: 10vw;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: var(--h2-responsive);
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+section p {
+  font-size: 4.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-icons {
+  display: flex;
+  gap: 1vw;
+  padding: 1vw;
+}
+
+#maximize-image-button img {
+  min-width: 10vw;
 }
