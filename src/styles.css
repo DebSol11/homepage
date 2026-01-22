@@ -75,13 +75,15 @@ h6 {
 :root {
   --h1-responsive: 10vw;
   --h2-responsive: 7vw;
+  --h3-responsive: 5.8vw;
   --main-margin: 5vw;
+  --background-color: #ab9e8e;
 }
 
 /* header */
 /* ----------------------------- */
 header {
-background: linear-gradient(135deg,#ab9e8e 50%, white 50%);
+  background: linear-gradient(135deg, var(--background-color) 50%, white 50%);
 }
 
 .picture-container {
@@ -135,24 +137,24 @@ background: linear-gradient(135deg,#ab9e8e 50%, white 50%);
 /* ----------------------------- */
 
 main {
- margin-top: 17vw;
+  margin-top: 17vw;
 }
 
-main h1{
+main h1 {
   text-align: center;
   font-size: var(--h1-responsive);
 }
 
-.main-content{
+.main-content {
   display: flex;
   flex-direction: column;
   gap: 5vw;
 }
 
-section{
- margin: var(--main-margin);
- padding-bottom: 10vw;
- box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+section {
+  margin: var(--main-margin);
+  padding-bottom: 10vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 section img {
@@ -187,3 +189,29 @@ section p {
 #maximize-image-button img {
   min-width: 10vw;
 }
+
+/* footer content of the homepage */
+/* ----------------------------- */
+
+footer {
+  background-color: var(--background-color);
+  margin-top: 15vw;
+  padding-bottom: 8vw;
+}
+
+.contact-me h1 {
+  text-align: center;
+  font-size: var(--h1-responsive);
+}
+
+.contact-me h3 {
+  font-size: var(--h3-responsive);
+  margin: var(--main-margin);
+}
+
+.contact-me p {
+  margin: var(--main-margin);
+  font-size: 5vw;
+}
+
+
