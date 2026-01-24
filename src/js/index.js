@@ -7,15 +7,16 @@ maximizeBtn.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     event.preventDefault();
     const idValue = btn.id;
-    fullScreenImg[idValue].classList.add("active");
+    let idNumber = idValue.match(/\d+/g);
+    fullScreenImg[idNumber].classList.add("active");
   });
 });
 
 fullScreenImg.forEach((img) => {
   img.addEventListener("click", () => {
     const idValue = img.id;
-    console.log(idValue);
-    fullScreenImg[idValue].classList.remove("active");
+    let idNumber = idValue.match(/\d+/g);
+    fullScreenImg[idNumber].classList.remove("active");
   });
 });
 
