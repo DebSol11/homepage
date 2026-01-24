@@ -5,8 +5,9 @@ import "../../src/styles.css";
 // ----------------------
 const fullScreenImg = document.querySelectorAll(".fullscreen-image");
 const maximizeBtn = document.querySelectorAll(".maximize-image-button");
+const sectionImg = document.querySelectorAll(".section-img");
 
-maximizeBtn.forEach((btn) => {
+sectionImg.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     event.preventDefault(); // prevents immediate reloads
     const idValue = btn.id;
