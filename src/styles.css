@@ -186,7 +186,7 @@ section p {
   padding: 3vw;
 }
 
-#maximize-image-button img {
+.maximize-image-button img {
   min-width: 10vw;
 }
 
@@ -200,6 +200,22 @@ section p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: black;
+  z-index: 9999;
+  display: none;
+}
+
+.fullscreen-image.active {
+  display: block;
 }
 
 /* footer content of the homepage */
