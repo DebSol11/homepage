@@ -258,16 +258,27 @@ footer {
   margin-bottom: 5vw;
 }
 
-.contact-me .social-media-buttons {
-  padding-bottom: 8vw;
+.social-media-buttons {
+  padding-bottom: 7vw;
 }
 
 /* responsive adjustments desktop */
 /* ----------------------------- */
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .phone-container img {
+    height: 5vw;
+  }
+
+  .email-container img {
+    height: 5vw;
+  }
+}
+
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
     background: linear-gradient(155deg, var(--background-color) 50%, white 50%);
   }
 
@@ -290,12 +301,18 @@ footer {
 
   .about-me h1 {
     text-align: left;
-    margin: var(--main-margin);
+    margin-left: var(--main-margin);
+    margin-right: var(--main-margin);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     font-size: 3vw;
   }
 
   .about-me p {
-    margin: var(--main-margin);
+    margin-left: var(--main-margin);
+    margin-right: var(--main-margin);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     font-size: 2vw;
   }
 
@@ -303,7 +320,8 @@ footer {
     display: flex;
     gap: 1vw;
     margin-right: 3vw;
-    justify-content: end;
+    justify-content: center;
+    padding: 0;
   }
 
   #github-button img {
@@ -354,10 +372,12 @@ footer {
 
   /*-------Footer-------*/
   footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     padding-right: 5vw;
-    margin-top: 5vw;
-    
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    margin-top: 7vw;
   }
 
   .contact-me h1 {
@@ -380,6 +400,7 @@ footer {
 
   .phone-container, .email-container {
     gap: 1vw;
+    padding: 1vw;
   }
 
   .phone-container p {
@@ -389,8 +410,13 @@ footer {
   .email-container p {
     margin: 0;
   }
-  /* #footerPicture {
-    
-  } */
+
+  .phone-container img {
+    height: 3vw;
+  }
+
+  .email-container img {
+    height: 3vw;
+  }
 
 }
