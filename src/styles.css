@@ -186,13 +186,10 @@ section p {
   padding: 3vw;
 }
 
-.maximize-image-button img {
-  min-width: 10vw;
-}
-
 .container-for-img {
   position: relative;
   padding-bottom: 100%;
+  cursor: zoom-in;
 }
 
 .section-img {
@@ -212,6 +209,7 @@ section p {
   background-color: black;
   z-index: 9999;
   display: none;
+  cursor: zoom-out;
 }
 
 .fullscreen-image.active {
@@ -242,6 +240,24 @@ footer {
   font-size: 5vw;
 }
 
+.phone-container {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.phone-container p {
+  display: flex;
+  align-items: center;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+}
+
 .contact-me .social-media-buttons {
   padding-bottom: 8vw;
 }
@@ -250,7 +266,75 @@ footer {
 /* ----------------------------- */
 
 @media (min-width: 1024px) {
+  header {
+    display: flex;
+    background: linear-gradient(155deg, var(--background-color) 50%, white 50%);
+  }
+
+  .picture-container {
+    margin-right: 0vw;
+  }
+
+  .bottom-left {
+    bottom: 1vw;
+    padding-left: 2vw;
+    font-size: 5vw;
+  }
+
+  .about-me {
+    margin-top: 13vw;
+    margin-bottom: 13vw;
+    margin-right: 7vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about-me h1 {
+    text-align: left;
+    margin: var(--main-margin);
+    font-size: 3vw;
+  }
+
+  .about-me p {
+    margin: var(--main-margin);
+    font-size: 2vw;
+  }
+
+  .social-media-buttons {
+    display: flex;
+    gap: 1vw;
+    margin: 3vw;
+    justify-content: end;
+  }
+
+  #github-button img {
+    min-width: 5vw;
+  }
+
+  #youtube-button img {
+    min-width: 5vw;
+  }
+
+  /*-------Main content-------*/
+  main {
+    margin-top: 3vw;
+  }
+
+  main h1 {
+    font-size: 4vw;
+  }
+
   .main-content {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5vw;
+    padding: 0;
+  }
+
+  section h2 {
+    font-size: 3vw;
+  }
+
+  section p {
+    font-size: 2vw;
   }
 }
