@@ -302,7 +302,7 @@ footer {
   .social-media-buttons {
     display: flex;
     gap: 1vw;
-    margin: 3vw;
+    margin-right: 3vw;
     justify-content: end;
   }
 
@@ -320,14 +320,22 @@ footer {
   }
 
   main h1 {
+    text-align: left;
     font-size: 4vw;
+    margin-left: 5vw;
   }
 
   .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5vw;
+    gap: 2vw;
     padding: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  section {
+    margin: 0;
   }
 
   section h2 {
@@ -336,5 +344,53 @@ footer {
 
   section p {
     font-size: 2vw;
+    margin-top: 2vw;
   }
+
+  .project-icons {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  /*-------Footer-------*/
+  footer {
+    display: flex;
+    padding-right: 5vw;
+    margin-top: 5vw;
+    
+  }
+
+  .contact-me h1 {
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 5vw;
+  }
+
+  .contact-me h3 {
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 5vw;
+  }
+
+  .contact-me p {
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 5vw;
+  }
+
+  .phone-container, .email-container {
+    gap: 1vw;
+  }
+
+  .phone-container p {
+    margin: 0;
+  }
+
+  .email-container p {
+    margin: 0;
+  }
+  /* #footerPicture {
+    
+  } */
+
 }
